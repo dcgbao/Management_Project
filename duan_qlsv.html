@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DỰ ÁN QUẢN LÝ SINH VIÊN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+    <div class="bg-dark text-white p-3">
+        <a href="/quanlynhanvien.html" class="text-white mx-2 text-decoration-none">Quản lý nhân viên</a>
+        <a href="/index.html" class="text-white mx-2 text-decoration-none">Quản lý sinh viên</a>
+        <a href="/duan_qlsv.html" class="text-white mx-2 text-decoration-none">Dự án quản lý sinh viên</a>
+    </div>
+
+    <div class="container">
+        <h3>Quản lý thông tin sinh viên</h3>
+        <form id="frmSinhVien">
+            <div class="row">
+                <div class="col-6">
+                    <p>Mã sinh viên</p>
+                    <input class="form-control" id="maSinhVien">
+                </div>
+                <div class="col-6">
+                    <p>Tên sinh viên</p>
+                    <input class="form-control" id="tenSinhVien">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Email</p>
+                    <input class="form-control" id="email">
+                </div>
+                <div class="col-6">
+                    <p>Số điện thoại</p>
+                    <input class="form-control" id="soDienThoai">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Loại sinh viên</p>
+                    <select id="loaiSinhVien" class="form-control">
+                        <option>Bình thường</option>
+                        <option>Khó khăn</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <p>Điểm rèn luyện</p>
+                    <input class="form-control" id="diemRenLuyen">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p>Điểm toán</p>
+                    <input class="form-control" id="diemToan">
+                </div>
+                <div class="col-4">
+                    <p>Điểm lý</p>
+                    <input class="form-control" id="diemLy">
+                </div>
+                <div class="col-4">
+                    <p>Điểm hóa</p>
+                    <input class="form-control" id="diemHoa">
+                </div>
+            </div>
+            <div class="form-group text-center">
+                <button class="btn btn-success" id="btnThemSinhVien" type="submit">Thêm sinh viên</button>
+            </div>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Mã sinh viên</th>
+                    <th>Tên sinh viên</th>
+                    <th>Email</th>
+                    <th>Số điện thoại</th>
+                    <th>Điểm trung bình</th>
+                    <th>Chức năng</th>
+                </tr>
+            </thead>
+            <tbody id="tblSinhVien">
+
+            </tbody>
+        </table>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <script src="/models/SinhVien.js"></script>
+    <script src="/controllers/duan_qlsv.js"></script>
+</body>
+</html>
