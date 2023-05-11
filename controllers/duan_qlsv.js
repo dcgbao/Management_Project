@@ -35,7 +35,7 @@ function renderSinhVien(arrSV) {
                 <td>${sv.email}</td>
                 <td>${sv.soDienThoai}</td>
                 <td>${sv.tinhDiemTrungBinh()}</td>
-                <td><button class="btn btn-danger" onclick="xoaSinhVien('${index}')">Xoá</button></td>
+                <td><button class="btn btn-danger" onclick="xoaSinhVien(${index})">Xoá</button></td>
             </tr>
         `
     }
