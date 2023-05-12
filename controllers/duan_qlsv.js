@@ -40,7 +40,6 @@ function renderSinhVien(arrSV) {
         `
     }
     document.querySelector('#tblSinhVien').innerHTML = htmlContent;
-    return htmlContent;
 }
 
 
